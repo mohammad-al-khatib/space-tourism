@@ -1,0 +1,97 @@
+.home {
+    background-image: url('../../public/assets/home/background-home-desktop.jpg');
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 15% 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .container {
+        max-width: 450px;
+
+        .heading-1 {
+            margin-top: 24px;
+            font-size: 150px;
+            font-weight: 400;
+            font-family: "Bellefair", serif;
+        }
+
+        .heading-3 {
+            font-size: 28px;
+            letter-spacing: 4.75px;
+            color: hsl(231, 77%, 90%);
+        }
+    }
+
+    .explore {
+        width: 274px;
+        height: 274px;
+        border-radius: 50%;
+        background-color: hsl(0, 0%, 100%);
+        display: grid;
+        align-items: center;
+        text-align: center;
+        font-family: "Bellefair", serif;
+        letter-spacing: 2px;
+        font-size: 32px;
+        color: hsl(230, 35%, 7%);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .home {
+        background-image: url('../../public/assets/home/background-home-tablet.jpg');
+        flex-direction: column;
+        padding-top: 202px;
+
+        .container {
+            text-align: center;
+
+            .heading-3 {
+                font-size: 20px;
+            }
+
+            .description {
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+
+        .explore {
+            margin: 156px 0 52px 0;
+            width: 242px;
+            height: 242px;
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 426px) {
+    .home {
+        padding: 124px 24px 0 24px;
+        background-image: url('../../public/assets/home/background-home-mobile.jpg');
+        .container {
+
+            .heading-1 {
+                font-size: 80px;
+                margin-top: 16px;
+            }
+            .heading-3 {
+                font-size: 16px;
+            }
+
+            .description {
+                font-size: 15px;
+                line-height: 25px;
+                margin-top: 16px;
+            }
+        }
+        .explore {
+            margin: 80px 0 48px 0;
+        }
+    }
+}

@@ -1,0 +1,175 @@
+.destination {
+    align-items: center;
+    background-image: url('../../public/assets/destination/background-destination-desktop.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    min-height: 100vh;
+    padding-top: 136px;
+    width: 100%;
+    .destination-image {
+        .destination-image-header {
+            font-family: "Barlow Condensed", sans-serif;
+            font-size: 28px;
+            font-weight: 400;
+            span {
+                color: rgba(255, 255, 255, 0.5);
+                margin-right: 24px;
+            }
+        }
+        img {
+            margin-top: 97px;
+        }
+    }
+    .destination-info {
+        max-width: 455px;
+        .dist-buttons {
+            display: flex;
+            gap: 35px;
+
+            .destination-button {
+                background: none;
+                border: none;
+                color: hsl(0, 0%, 100%);
+                font-family: "Barlow Condensed", sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                letter-spacing: 2.7px;
+                padding: 0 0 14px;
+                cursor: pointer;
+            }
+        }
+        .heading-1 {
+            font-family: "Bellefair", serif;
+            font-size: 100px;
+            font-weight: 400;
+            margin-top: 37px;
+        }
+        .description {
+            border-bottom: 1px solid #fff;
+            margin-top: 14px;
+            padding: 0 0 54px 0;
+            max-width: 445px;
+        }
+        .stats {
+            align-items: center;
+            display: flex;
+            gap: 80px;
+            margin-top: 28px;
+            .heading-6 {
+                color: hsl(231, 77%, 90%);
+                font-family: "Barlow Condensed", sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: 2.35px;
+            }
+            .heading-5 {
+                color: hsl(0, 0%, 100%);
+                font-family: "Bellefair", serif;
+                font-size: 28px;
+                font-weight: 400;
+                margin: 12px 0 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .destination {
+        background-image: url('../../public/assets/destination/background-destination-tablet.jpg');
+        flex-direction: column;
+        padding: 136px 38px 0 38px;
+        align-items: center;
+
+        .destination-image {
+            width: 100%;
+
+            .destination-image-header {
+                font-size: 24px;
+
+                span {
+                    margin-right: 16px;
+                }
+            }
+            img {
+                display: block;
+                width: 300px;
+                margin: 60px auto 0;
+            }
+        }
+
+        .destination-info {
+            max-width: 575px;
+            margin-top: 53px;
+            text-align: center;
+
+            .dist-buttons {
+                align-items: center;
+                justify-content: center;
+
+                .destination-button{
+                    font-size: 14px;
+                }
+            }
+
+            .heading-1 {
+                font-size: 80px;
+            }
+
+            .description {
+                font-size: 16px;
+                line-height: 28px;
+                margin-top: 8px;
+                padding: 0 0 49px 0;
+                max-width: unset;
+            }
+
+            .stats {
+                padding: 0 0 36px 0;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .destination {
+        background-image: url('../../public/assets/destination/background-destination-mobile.jpg');
+        padding: 94px 24px 0 24px;
+
+        .destination-image {
+            min-height: 264px;
+
+            .destination-image-header {
+                text-align: center;
+            }
+
+            img {
+                width: 170px;
+            }
+        }
+
+        .destination-info {
+            margin-top: 26px;
+
+            .heading-1 {
+                margin-top: 20px;
+                font-size: 56px;
+            }
+
+            .description {
+                max-width: 325px;
+                margin: 1px auto 0;
+                padding: 0 0 32px 0;
+                font-size: 15px;
+                line-height: 25px;
+            }
+
+            .stats {
+                flex-direction: column;
+                gap: 32px;
+            }
+        }
+    }
+}
